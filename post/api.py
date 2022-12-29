@@ -1,4 +1,4 @@
-import knox
+
 from knox.models import AuthToken
 from rest_framework import generics
 from rest_framework.response import Response
@@ -6,7 +6,7 @@ from rest_framework.response import Response
 from .permissions import IsOwnerOrReadOnly
 from .serializer import PostSerializer, UserSerializer, RegisterSerializer, CommentSerializer
 from .models import Post, Comment
-from django.contrib.auth import login
+
 
 from django.contrib.auth import login
 
@@ -37,6 +37,7 @@ class RegisterAPI(generics.GenericAPIView):
         "user": UserSerializer(user, context=self.get_serializer_context()).data,
         "token": AuthToken.objects.create(user)[1]
         })
+
 
 class PostCreateApi(generics.CreateAPIView):
     queryset = Post.objects.all()
@@ -72,7 +73,6 @@ class CommentApi(generics.ListAPIView):
     serializer_class = CommentSerializer
 
 
-
 class CommentUpdateApi(generics.RetrieveUpdateAPIView):
     queryset = Comment.objects.all()
     serializer_class = CommentSerializer
@@ -83,4 +83,3 @@ class CommentDeleteApi(generics.DestroyAPIView):
     queryset = Comment.objects.all()
     serializer_class = CommentSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly]
-
