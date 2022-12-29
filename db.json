@@ -1,0 +1,146 @@
+[
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "stas1234",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "Stas",
+    "first_name": "Stas",
+    "last_name": "Example",
+    "email": "stas@example.com",
+    "is_staff": false,
+    "is_active": false,
+    "date_joined": null,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "User1234",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "User",
+    "first_name": "",
+    "last_name": "",
+    "email": "user@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-12-29T09:49:36.963Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "User1234",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "User_example",
+    "first_name": "",
+    "last_name": "",
+    "email": "user2@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-12-29T09:51:25.483Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "example1234",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "example",
+    "first_name": "",
+    "last_name": "",
+    "email": "example@a.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-12-29T10:13:49.465Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 5,
+  "fields": {
+    "password": "Password@123",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@bot.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-12-29T10:32:12.961Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 6,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$kujOquS9eHTs66DHGYHZvg$JwHX7drc5M2eJVT8QwgzHLWTd5A0yiO7tN7na5cjwvg=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "Stas1",
+    "first_name": "",
+    "last_name": "",
+    "email": "stas@ukr.net",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-12-29T10:39:53.289Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 7,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$HkYvnTFwRvYluoHelO0HB2$wnDXvcqimhiIhusL5tnZVnBrYc+5kWl4Jezvpr2cmAE=",
+    "last_login": "2022-12-29T13:17:51.974Z",
+    "is_superuser": false,
+    "username": "stas1",
+    "first_name": "",
+    "last_name": "",
+    "email": "stas@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-12-29T10:54:19.659Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "post.comment",
+  "pk": 1,
+  "fields": {
+    "post": 2,
+    "username": "stas1",
+    "comment": "Example comment"
+  }
+},
+{
+  "model": "post.post",
+  "pk": 2,
+  "fields": {
+    "owner": 1,
+    "post": "Example",
+    "post_info": "Example info"
+  }
+}
+]
