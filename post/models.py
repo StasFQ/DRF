@@ -9,6 +9,7 @@ class Post(models.Model):
 
 
 class Comment(models.Model):
+    owner = models.ForeignKey(User, on_delete=models.CASCADE)
     post = models.ForeignKey(Post, on_delete=models.CASCADE)
     username = models.CharField(max_length=120)
     comment = models.CharField(max_length=230)
