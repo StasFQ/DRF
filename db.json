@@ -126,12 +126,41 @@
   }
 },
 {
+  "model": "auth.user",
+  "pk": 8,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$RD8OJeOmu40gCUMQMZN5Ck$5tY1kxbZDesVa/NBpeh5mftlJ3R7Jfv8tZj51icE0u0=",
+    "last_login": "2023-01-04T11:11:50.933Z",
+    "is_superuser": false,
+    "username": "Example",
+    "first_name": "",
+    "last_name": "",
+    "email": "example@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-01-04T10:51:13.493Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
   "model": "post.comment",
   "pk": 1,
   "fields": {
+    "owner": 1,
     "post": 2,
     "username": "stas1",
     "comment": "Example comment"
+  }
+},
+{
+  "model": "post.comment",
+  "pk": 2,
+  "fields": {
+    "owner": 1,
+    "post": 2,
+    "username": "admin",
+    "comment": "dsdsda"
   }
 },
 {
@@ -141,6 +170,15 @@
     "owner": 1,
     "post": "Example",
     "post_info": "Example info"
+  }
+},
+{
+  "model": "post.post",
+  "pk": 3,
+  "fields": {
+    "owner": 2,
+    "post": "Example",
+    "post_info": "Example info 2"
   }
 }
 ]
