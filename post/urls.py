@@ -1,7 +1,6 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from . import api
-from django.urls import path
 from knox import views as knox_views
 from .api import RegisterAPI, LoginAPI
 
