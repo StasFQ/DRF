@@ -12,7 +12,7 @@
     "email": "stas@example.com",
     "is_staff": false,
     "is_active": false,
-    "date_joined": null,
+    "date_joined": "2022-11-29T09:49:36.963Z",
     "groups": [],
     "user_permissions": []
   }
